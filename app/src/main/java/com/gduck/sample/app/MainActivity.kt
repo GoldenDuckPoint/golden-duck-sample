@@ -2,7 +2,7 @@ package com.gduck.sample.app
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.ad.gduck.app.GoldenDuck
+import com.ad.gduck.sdk.GoldenDuck
 import com.gduck.sample.app.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.textView.setOnClickListener {
             // 무료 포인트 적립 실행
-            GoldenDuck.launch(this)
+            GoldenDuck.launch(this, "{USER_ID}")
         }
     }
 }
