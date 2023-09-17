@@ -61,7 +61,7 @@ class MainApplication : Application() {
 }
 ```
 - GDUCK SDK 무료 포인트 충전 화면 실행
-- {UserID}는 로그인 사용자의 ID이며, 생략 시 광고 ID를 기준으로 처리됩니다.
+- {USER_ID}는 로그인 사용자의 ID이며, 생략 시 광고 ID를 기준으로 처리됩니다.
 ```kotlin
 class MainActivity : AppCompatActivity() {
 
@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.textView.setOnClickListener {
             // 무료 포인트 적립 실행
-            GoldenDuck.launch(this, "{UserID}")
+            GoldenDuck.launch(this, "{USER_ID}")
         }
     }
 }
